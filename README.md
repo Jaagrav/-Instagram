@@ -1,3 +1,8 @@
+## Not Instagram
+A Direct messaging app developed with React to chat with friends personally!
+https://notinstagram.netlify.app/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
