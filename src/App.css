@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  background-color:white;
+  width:10px;
+}
+::-webkit-scrollbar-thumb {
+  appearance: none;
+  background-color:#3B414A;
+  border-radius: 7px;
+}
+
+.branding-name {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  color: #3B414A;
+  margin: auto;
+  top: 0;right: 0;left: 0;bottom: 0;
+}
+
+.sign-in-btn {
+  position: absolute;height: 50px;
+  margin: auto;
+  top: 150px;right: 0;left: 0;bottom: 0;
+  cursor: pointer;
+}
+
+.profile-page {
+  position: absolute;
+  height: 100%;
+  width: 20pc;
+  margin: auto;
+}
+
+.profile-page .header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+.site-name {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: auto;
+  top: 0;bottom: 0;left: 20px;
+}
+
+.my-profile-picture {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50% !important;
+}
+
+.my-profile-picture-btn {
+  height: 50px !important;
+  width: 50px !important;
+  position: absolute !important;
+  margin: auto !important;top: 0 !important;bottom: 0 !important;right: 5px !important;
+}
+
+.body {
+  position: absolute;
+  height: calc(100% - 50px);
+  width: 100%;
+  top: 50px;
+  background-color: #fff;
+}
+
+.user-block {
+  padding: 15px;
+  width: 100%;
+  border-bottom: 3px solid #F9FAFC;
+  display: grid;
+  grid-template-columns: 40px calc(100% - 40px);
+}
+
+.profile-picture {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: auto 0;
+  color: #3B414A;
+}
+
+.chat-page {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 20pc);
+  left: 20pc;
+  margin: auto;
+  background: #000;
+}
+
+.chat-page-header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+}
+.chat-page-body{
+  position: absolute;
+  height: calc(100% - 115px);
+  width: 100%;
+  top: 50px;
+  padding: 10px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #F9FAFC;
+}
+.chat-page-footer {
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+}
+
+.text-holder {
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 10px;
+  display: inline-flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.my-text-holder .text{
+  background-color: #fff;
+  margin-left: auto;
+  right: 0;
+  padding: 15px 20px;
+  border-radius: 24px 0 0 24px;
+}
+
+.their-text-holder .text{
+  background-color: #3B414A;
+  color: white;
+  margin-right: auto;
+  left: 0;
+  padding: 15px 20px;
+  border-radius: 0 24px 24px 0;
+}
+
+.back-btn {
+  position: absolute !important;
+  height: 50px;width: 50px;
+  margin: auto !important;;
+  left: 10px !important;;
+  top: 0 !important;;bottom: 0 !important;;
+  color: #3B414A !important;;
+  cursor: pointer;
+  display: none !important;
+}
+
+.chat-name {
+  position: absolute;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  top: 0;right: 0;left: 0;bottom: 0;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.chat-page-pp {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  top: 0;bottom: 0;right: 20px;
+  border-radius: 50%;
+}
+
+.send-msg-holder {
+  position: absolute;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border: 3px solid #F9FAFC;
+  margin:auto;
+  border-radius: 50px;
+  top: 0;right: 0;left: 0;bottom: 0;
+}
+
+.msg-input {
+  position: absolute;
+  margin: auto;
+  top: 0;bottom: 0;
+  height:100%;
+  width: calc(100% - 30px);
+  border: none;
+  outline: none;padding: 0 20px;
+  color: #3B414A;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.send-msg {
+  position: absolute !important;
+  height: 50px;width: 50px;
+  margin: auto !important;;
+  right: 10px !important;;
+  top: 0 !important;;bottom: 0 !important;;
+  color: #3B414A !important;;
+  cursor: pointer;
+}
+
+@media (max-width: 460px) {
+  .profile-page {
+    width: 100%;
+  }
+  .chat-page {
+    width: 100%;
+    top: 0;
+    bottom: 0;right: 0;left: 0;
+  }
+  .back-btn {
+    display: block !important;
+  }::-webkit-scrollbar {
+    display: none;
+  }
+}
+
